@@ -8,3 +8,6 @@ I wrote this script for my own use, and to be sure the password I test is never 
 It reaquires
 - OSX/Darwin/MacOS: the shasum executable
 - GNU/Linux: the sha1sum executable
+- FreeBSD: the shasum executable
+
+- All: the curl executable

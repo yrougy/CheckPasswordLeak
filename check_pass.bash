@@ -5,6 +5,7 @@ URL="https://api.pwnedpasswords.com/range/"
 case $(uname -s) in
 	Linux) HASH=sha1sum;;
 	Darwin) HASH=shasum;;
+	*BSD) HASH=shasum;;
 	*) HASH=sha1sum;;
 esac
 
