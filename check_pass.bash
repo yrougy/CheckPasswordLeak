@@ -1,4 +1,4 @@
-#/bin/bash
+#!/usr/bin/env bash
 
 
 URL="https://api.pwnedpasswords.com/range/"
