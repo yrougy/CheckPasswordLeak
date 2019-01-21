@@ -23,6 +23,7 @@ REQUEST="${URL}${HEADSHA}"
 if  CHECK=$(curl -s "$REQUEST" | grep "$TAILSHA") 
 then 
 	echo $CHECK | cut -d : -f 2 | xargs echo Found occurences:
+	exit 1
 else
 	echo "Not found in haveibeenpwned.com database"
 fi
