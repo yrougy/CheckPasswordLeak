@@ -20,5 +20,9 @@ HEADSHA="${SHA1PASS:0:5}"
 TAILSHA="${SHA1PASS:5:39}"
 
 REQUEST="${URL}${HEADSHA}"
-curl -s "$REQUEST" | grep "$TAILSHA" | cut -d : -f 2 | xargs echo Found occurences: 
-
+if  CHECK=$(curl -s "$REQUEST" | grep "$TAILSHA") 
+then 
+	echo $CHECK | cut -d : -f 2 | xargs echo Found occurences:
+else
+	echo "Not found in haveibeenpwned.com database"
+fi
