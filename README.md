@@ -5,7 +5,7 @@ This small script check if the entered password is in the HaveIBeenPwned passwor
 
 I wrote this script for my own use, and to be sure the password I test is never sent directly to a server.
 
-It reaquires
+It requires
 - OSX/Darwin/MacOS: the shasum executable
 - GNU/Linux: the sha1sum executable
 - FreeBSD: the shasum executable
